@@ -2,6 +2,8 @@
 
 ## [POST] `/user`
 
+Send
+
 ```js
 {
     username(string, 255),
@@ -13,11 +15,15 @@
 }
 ```
 
+Receive
+
 ```
 200 OK
 ```
 
 ## [PATCH] `/user`
+
+Send
 
 ```js
 {
@@ -25,11 +31,15 @@
 }
 ```
 
+Receive
+
 ```
 200 OK
 ```
 
 ## [POST] `/member`
+
+Send
 
 ```js
 {
@@ -40,6 +50,8 @@
     gender(string, 'male', 'female')
 }
 ```
+
+Receive
 
 ```
 200 OK
@@ -47,6 +59,8 @@
 
 ## [PUT] `/member`
 
+Send
+
 ```js
 {
     realname(string, 255),
@@ -56,6 +70,8 @@
     gender(string, 'male', 'female')
 }
 ```
+
+Receive
 
 ```
 200 OK
