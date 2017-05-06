@@ -37,6 +37,28 @@ Receive
 200 OK
 ```
 
+## [GET] `/members`
+
+Send
+
+```js
+```
+
+Receive
+
+```
+200 OK
+[
+    {
+        realname(string, 255),
+        relative(string, 255),
+        address(string, 255),
+        birthday(string, 255, 'YYYY-MM-DD'),
+        gender(string, 'male', 'female')
+    }
+]
+```
+
 ## [POST] `/member`
 
 Send
@@ -68,6 +90,22 @@ Send
     address(string, 255),
     birthday(string, 255, 'YYYY-MM-DD'),
     gender(string, 'male', 'female')
+}
+```
+
+Receive
+
+```
+200 OK
+```
+
+## [DELETE] `/member`
+
+Send
+
+```js
+{
+    id(int)
 }
 ```
 
